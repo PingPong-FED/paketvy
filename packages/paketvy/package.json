@@ -1,0 +1,36 @@
+{
+  "name": "paketvy",
+  "version": "0.0.1",
+  "description": "Package动态架构为中心的轻量级JavaScript框架",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -b .",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "suliyu@pingpongx.com",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "@pp/block": "^2.6.1",
+    "@stark/console": "^0.2.1",
+    "@stark/eventEmitter": "^0.2.1",
+    "@stark/storage": "^0.2.1",
+    "@stark/utils": "^0.2.1",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.3.1",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

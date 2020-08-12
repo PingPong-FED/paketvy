@@ -1,0 +1,29 @@
+{
+  "name": "paketvy",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "boot": "lerna bootstrap",
+    "watch": "lerna run watch --parallel",
+    "build": "lerna run build",
+    "commit": "lerna publish  --conventional-commits --no-verify-access --force-publish",
+    "pub": "lerna publish --no-verify-access"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.pingpongx.org:front/power/monitor.git"
+  },
+  "author": "suliyu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "lerna": "^3.8.5",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2",
+    "tslint-config-prettier": "^1.17.0",
+    "tslib": "^1.9.3"
+  }
+}
