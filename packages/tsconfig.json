@@ -7,5 +7,5 @@
 
 {
   "files": [],
-  "references": [{ "path": "vuepack" }]
+  "references": [{ "path": "paketvy" }]
 }
