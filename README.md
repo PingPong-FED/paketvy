@@ -83,7 +83,7 @@ Paketvy.Package本质上是一个模块加载器，这里您需要通过**pack.m
 ```
 新建模块：在指定的模块根目录(packages)下，新建目录即可。目录名与模块名一致，例如这里的home。
 
-#### 配置视图
+### 配置视图
 ```bash
 ├── packages
 │   └── home
@@ -113,7 +113,7 @@ Paketvy.Package本质上是一个模块加载器，这里您需要通过**pack.m
 ```
 视图管理：您可在模块目录中，通过pages目录来进行视图管理（不过这里paketvy并没有强约束视图目录，您也可以使用您常用的视图目录来进行管理，请别忘记在路由配置page.json中进行指定）
 
-#### 配置路由
+### 配置路由
 ```bash
 ├── packages
 │   └── home
@@ -145,7 +145,7 @@ Paketvy.Package本质上是一个模块加载器，这里您需要通过**pack.m
 ```
 路由配置：您可以像在vue-router中配置路由一样，paketvy兼容vue-router。并且我们将路由配置独立出来放在模块中，与业务联系更更紧密，更方便管理路由信息。
 
-#### 配置接口
+### 配置接口
 ```bash
 ├── packages
 │   └── home
@@ -227,7 +227,7 @@ export default {
 
 
 
-#### 配置数据层
+### 配置数据层
 ```bash
 ├── packages
 │   └── home
@@ -291,7 +291,7 @@ export default {
 注意：paketvy强约束数据层目录，即模块中的数据配置必须放在vuex目录中
 </font>
 
-#### 配置国际化
+### 配置国际化
 ```bash
 ├── packages
 │   └── home
