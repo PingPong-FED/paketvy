@@ -9,14 +9,17 @@
 export default {
   name:'home',
   methods:{
-    async getUserInfo(){
-      const resp = await this.$block.dispatch('home/getUserInfo')
+    async getTodos(){
+      const resp = await this.$block.dispatch('home/getTodos',{
+        params:{
+          todoNo:1
+        }
+      })
       console.log(resp)
     }
   },
   mounted(){
-    // console.log(this.$store)
-    this.getUserInfo()
+    this.getTodos()
   }
 }
 </script>
