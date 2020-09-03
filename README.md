@@ -209,23 +209,16 @@ export default {
 }
 </script>
 ```
-> this.$block.dispatch(apiName, payload) => promise
-> 
-> apiName：指定模块的接口名 payload：负载
-> 
-> payload.params：路径参数或者queryString的参数
-> 
-> payload.data：requestBody的参数
-> 
+> this.$block.dispatch(apiName, payload) => promise  
+> apiName：指定模块的接口名 payload：负载  
+> payload.params：路径参数或者queryString的参数  
+> payload.data：requestBody的参数  
 > 上面操作的实际请求：http://xxx/mock/199/api/getList/easy?orderNo=1 requestBody: { "name": "123"}
 
 配置接口：您只需在模块目录下新建block(接口层)目录以及参照上面packages/home/block/index.js配置接口即可使用接口请求
-
-<font color=red>
+```json
 注意：paketvy强约束接口层目录，即模块中的接口配置必须放在block目录中
-</font>
-
-
+```
 
 ### 配置数据层
 ```bash
@@ -286,10 +279,9 @@ export default {
 </script>
 ```
 配置数据层：您只需在模块目录下新建vuex(数据层)目录以及参照上面packages/home/vuex/index.js配置即可使用数据管理。paketvy兼容vuex，您可以像使用vuex一样来进行数据层管理。
-
-<font color=red>
+```json
 注意：paketvy强约束数据层目录，即模块中的数据配置必须放在vuex目录中
-</font>
+```
 
 ### 配置国际化
 ```bash
@@ -325,10 +317,9 @@ export default {
 ```
 
 配置国际化：您只需在模块目录下新建locale(国际化)目录，再进行不同语言的配置即可
-
-<font color=red>
+```json
 注意：paketvy强约束国际化目录，即模块中的语言配置必须放在locale目录中
-</font>
+```
 
 ## 例子
 
