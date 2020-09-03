@@ -1,8 +1,0 @@
-{
-  "name": "home",
-  "desc": "协议",
-  "route": {
-    "path": "/home",
-    "component": "/index.vue"
-  }
-}
