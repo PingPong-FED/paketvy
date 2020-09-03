@@ -1,7 +1,7 @@
 {
   "name": "paketvy",
   "version": "0.0.1",
-  "description": "Package动态架构为中心的轻量级JavaScript框架",
+  "description": "基于 vue 全家桶的轻量级前端动态化解决方案",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [

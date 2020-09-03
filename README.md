@@ -287,7 +287,7 @@ export default {
 ```bash
 ├── packages
 │   └── home
-│       ├── locale 模块的国际化
+│       ├── locales 模块的国际化
 │       │   ├── en-US.json i18n英文配置信息
 │       │   └── zh-CN.json i18n中文配置信息
 │       ├── pages 模块的视图层
@@ -316,13 +316,14 @@ export default {
 </template>
 ```
 
-配置国际化：您只需在模块目录下新建locale(国际化)目录，再进行不同语言的配置即可
+配置国际化：您只需在模块目录下新建locales(国际化)目录，再进行不同语言的配置即可
 ```json
-注意：paketvy强约束国际化目录，即模块中的语言配置必须放在locale目录中
+注意：paketvy强约束国际化目录，即模块中的语言配置必须放在locales目录中
 ```
 
 ## 例子
-
+count+api: 简单的计算+接口请求的示例
+i18n: 简单的国际化示例，可手动切换语言
 
 ## LICENSE
 

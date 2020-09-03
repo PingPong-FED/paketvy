@@ -11,11 +11,12 @@ export default {
   methods:{
     changeLocale(){
       const localStorage = window.localStorage
-      const currentLocale = localStorage.getItem('vuepack')
+      const SIGN_NAME = 'paketvy'
+      const currentLocale = localStorage.getItem(SIGN_NAME)
       if(currentLocale){
         const currentLanguageObj = JSON.parse(currentLocale)
         currentLanguageObj.language = currentLanguageObj.language === 'zh-CN'?'en-US':'zh-CN'
-        localStorage.setItem('vuepack', JSON.stringify(currentLanguageObj))
+        localStorage.setItem(SIGN_NAME, JSON.stringify(currentLanguageObj))
         window.location.reload()
       }
     }

@@ -4,13 +4,6 @@
   "route": {
     "path": "/home",
     "name":"homeRoot",
-    "component": "/index.vue",
-    "children":[
-      {
-        "name":"homeDetail",
-        "path": "detail",
-        "component": "/pages/detail.vue"
-      }
-    ]
+    "component": "/index.vue"
   }
 }

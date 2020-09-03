@@ -1,10 +1,3 @@
-/*
- * @Author: suliyu
- * @Date: 2018-11-12 16:25:49
- * @Last Modified by: suliyu
- * @Last Modified time: 2018-11-12 16:28:44
- */
-
 // VUE事件
 export const VUE_EVENTS = {
   // 初始化vue

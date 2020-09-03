@@ -1,9 +1,3 @@
-/*
- * @Author: suliyu
- * @Date: 2018-11-13 09:54:32
- * @Last Modified by: suliyu
- * @Last Modified time: 2018-12-27 17:57:11
- */
 import blockStore from '@pp/block/dist/core/store'
 import Storage from '@stark/storage'
 import { isFunction, isObject } from '@stark/utils/lib/basicType/index'
@@ -78,7 +72,7 @@ export default class Vuepack {
     }
     cache.VueConstructor = Vue
     // 创建缓存
-    cache.storage = new Storage('vuepack', 'cookie')
+    cache.storage = new Storage('paketvy', 'cookie')
     cache.storage.load()
     this.init()
   }
