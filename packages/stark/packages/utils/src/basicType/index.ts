@@ -1,7 +1,0 @@
-export * from './isArray'
-export * from './isFunction'
-export * from './isNumber'
-export * from './isObject'
-export * from './isPromise'
-export * from './isString'
-export * from './isUndefined'
