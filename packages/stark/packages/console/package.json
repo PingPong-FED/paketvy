@@ -1,6 +1,6 @@
 {
   "name": "@stark/console",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "一个优雅的console类，适用于 Node.js 和 Browser",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
