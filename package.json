@@ -12,10 +12,6 @@
     "commit": "lerna publish  --conventional-commits --no-verify-access --force-publish",
     "pub": "lerna publish --no-verify-access"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@git.pingpongx.org:front/power/monitor.git"
-  },
   "author": "suliyu",
   "license": "MIT",
   "devDependencies": {
