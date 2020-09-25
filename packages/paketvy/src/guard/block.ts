@@ -1,5 +1,5 @@
-import Block, { StoreOptions } from '@pp/block'
-import BlockStore from '@pp/block/dist/core/store'
+import Block, { StoreOptions } from '@ppfed/block'
+import BlockStore from '@ppfed/block/dist/core/store'
 import Vue from 'vue'
 import cache from '../core/cache'
 import Import from '../core/import'
@@ -57,7 +57,7 @@ export default class PackBlock {
     // 读取block配置
     const data: any = await Promise.all(
       needLoadNames.map((name: string) =>
-        Import.importModule(name, `/block/index.ts`)
+        Import.importModule(name, `/block/index`)
       )
     )
 
@@ -71,7 +71,7 @@ export default class PackBlock {
         this.registerModules.push(name)
       }
     })
-    console.log(`当前已加载的block module：`, this.registerModules)
+    // console.log(`当前已加载的block module：`, this.registerModules)
     return Promise.resolve()
   }
 }

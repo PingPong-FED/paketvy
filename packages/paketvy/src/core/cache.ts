@@ -1,5 +1,5 @@
-import blockStore from '@pp/block/dist/core/store'
-import Storage from '@stark/storage'
+import Storage from '@paketvy/storage'
+import blockStore from '@ppfed/block/dist/core/store'
 import Vue, { VueConstructor } from 'vue'
 import VueI18n from 'vue-i18n'
 import VueRouter, { NavigationGuard } from 'vue-router'

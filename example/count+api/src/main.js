@@ -1,15 +1,15 @@
-import Vuepack from '@shield/vuepack'
+import Paketvy from 'paketvy'
+// import Paketvy from '../../../packages/paketvy/lib'
 import App from './App.vue'
 
-const vuepack = new Vuepack.Package({
-  pack:{
+const paketvy = new Paketvy.Package({
+  pack: {
     importFn: path => import(`../packages/${path}`),
     modules: ['home']
   }
 })
 
-vuepack.create({
+paketvy.create({
   el: '#app',
-  render: (h) => h(App)
+  render: h => h(App)
 })
-

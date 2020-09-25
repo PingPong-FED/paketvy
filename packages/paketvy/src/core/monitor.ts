@@ -1,4 +1,4 @@
-import EventEmitter, { EventFn } from '@stark/eventEmitter'
+import EventEmitter, { EventFn } from '@paketvy/eventemitter'
 import { ROUTER_EVENTS, VUE_EVENTS } from '../config/eventType'
 
 export default class Monitor extends EventEmitter {

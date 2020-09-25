@@ -40,7 +40,7 @@ export default class PackVuex {
 
   constructor(storeConfig: IStoreOptions) {
     cache.VueConstructor.use(Vuex)
-    console.log(storeConfig)
+    // console.log(storeConfig)
 
     cache.store = cache.vueConf.store =
       (cache.packConf.inject && cache.packConf.inject.store) ||
@@ -90,7 +90,7 @@ export default class PackVuex {
     // 读取vuex配置
     const data: any = await Promise.all(
       needLoadNames.map((name: string) =>
-        Import.importModule(name, `/vuex/index.ts`)
+        Import.importModule(name, `/vuex/index`)
       )
     )
 
@@ -103,7 +103,7 @@ export default class PackVuex {
       }
     })
 
-    console.log(`当前已加载的vuex module：`, this.vuexRegisterModules)
+    // console.log(`当前已加载的vuex module：`, this.vuexRegisterModules)
     return Promise.resolve()
   }
 
@@ -130,7 +130,7 @@ export default class PackVuex {
           return flag
         }
       )
-      console.log(`卸载vuex module：`, this.vuexUnregisterModules)
+      // console.log(`卸载vuex module：`, this.vuexUnregisterModules)
       this.vuexUnregisterModules = []
     })
 

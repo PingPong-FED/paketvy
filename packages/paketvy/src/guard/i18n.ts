@@ -108,11 +108,11 @@ class PackI18n {
     this.i18n.setLocaleMessage(this.fallbackLocale, fallbackLocaleMessage)
 
     this.loadedLanguages.push(lang)
-    console.log(`第一语言${lang}，更新后的语言包：`, futureLocaleMessage)
-    console.log(
-      `备用语言${this.fallbackLocale}，备选语言包：`,
-      fallbackLocaleMessage
-    )
+    // console.log(`第一语言${lang}，更新后的语言包：`, futureLocaleMessage)
+    // console.log(
+    //   `备用语言${this.fallbackLocale}，备选语言包：`,
+    //   fallbackLocaleMessage
+    // )
     return Promise.resolve(this.setI18nLanguage(lang))
   }
 }

@@ -1,25 +1,38 @@
 <template>
   <div>
     home
+    <div>
+      <p>以下为请求的数据：</p>
+      <p>{{post.title}}</p>
+      <p>{{post.body}}</p>
+    </div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name:'home',
-  methods:{
-    async getTodos(){
-      const resp = await this.$block.dispatch('home/getTodos',{
-        params:{
-          todoNo:1
-        }
-      })
-      console.log(resp)
+  name: 'home',
+  data() {
+    return {
+      post: {},
     }
   },
-  mounted(){
+  methods: {
+    increment() {
+      this.$store.commit('home/increment')
+    },
+    async getTodos() {
+      const resp = await this.$block.dispatch('home/getRootInfo', {
+        params: {
+          pid: 55,
+        },
+      })
+      this.post = resp && resp.data
+    },
+  },
+  mounted() {
     this.getTodos()
-  }
+  },
 }
 </script>

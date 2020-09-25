@@ -4,23 +4,30 @@
     <p>{{count}}</p>
     <p>{{$t('home.name')}}</p>
     <button @click="increment">increment</button>
+    <div>
+      <p>{{post.title}}</p>
+      <p>{{post.body}}</p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name:'detail',
-  computed:{
-    count(){
-      return this.$store.getters['home/count']
+  name: 'detail',
+  data() {
+    return {
+      post: {},
     }
   },
-  methods:{
-    increment(){
+  computed: {
+    count() {
+      return this.$store.getters['home/count']
+    },
+  },
+  methods: {
+    increment() {
       this.$store.commit('home/increment')
     },
   },
-  mounted(){
-  }
 }
 </script>

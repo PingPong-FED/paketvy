@@ -4,7 +4,7 @@ import Vuepack from './core/vuepack'
 export * from './core/router'
 export * from './core/vuepack'
 export * from './guard/vuex'
-export * from '@pp/block'
+export * from '@ppfed/block'
 
 export default {
   Package: Vuepack,

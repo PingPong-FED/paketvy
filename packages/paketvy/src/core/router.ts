@@ -74,7 +74,7 @@ export default class PackRouter {
     )
     routeConf = routeConf.filter((conf: any) => !!conf)
     const routeConfResult = this.dependencyAnalysis(routeConf)
-    console.log('动态加载路由表：', routeConfResult)
+    // console.log('动态加载路由表：', routeConfResult)
     this.router.addRoutes(routeConfResult)
     return new Promise((resolve) => resolve())
   }

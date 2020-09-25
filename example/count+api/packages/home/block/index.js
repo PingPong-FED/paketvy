@@ -1,13 +1,13 @@
 const api = {
-  getTodos: [
+  getRootInfo: [
     'get',
-    '/todos/{todoNo}',
-    { expect: () => true, initialVal: {} }
-  ],
+    '/posts/{pid}',
+    { expect: data => true, initialVal: undefined, retry: { times: 3 } }
+  ]
 }
 
 const config = {
-  baseURL: 'https://jsonplaceholder.typicode.com'
+  baseURL: 'http://jsonplaceholder.typicode.com'
 }
 
 export default {
