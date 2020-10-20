@@ -13,8 +13,7 @@
 ```bash
 $ npm install -g @vue/cli
 $ vue create --preset PingPong-FED/paketvy-preset-vue my-project
-$ cd my-project
-$ yarn start
+$ cd my-project && yarn serve
 ```
 
 ## 怎么用
