@@ -11,8 +11,9 @@
 ## 快速上手
 
 ```bash
-$ vue create paketvy-world
-$ cd paketvy-world
+$ npm install -g @vue/cli
+$ vue create --preset PingPong-FED/paketvy-preset-vue my-project
+$ cd my-project
 $ yarn start
 ```
 
