@@ -1,6 +1,5 @@
-## logo
+## Paketvy
 
-paketvy
 基于 vue 全家桶的轻量级前端动态化解决方案
 
 ## 特点
@@ -327,4 +326,4 @@ i18n: 简单的国际化示例，可手动切换语言
 
 ## LICENSE
 
-[MIT](https://github.com/pingpong/paketvy/blob/master/LICENSE)
+[MIT](https://github.com/PingPong-FED/paketvy/blob/master/LICENSE)
