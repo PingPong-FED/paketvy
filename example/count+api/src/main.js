@@ -1,8 +1,16 @@
 import Paketvy from 'paketvy'
-// import Paketvy from '../../../packages/paketvy/lib'
 import App from './App.vue'
 
 const paketvy = new Paketvy.Package({
+  router:{
+    mode: 'history',
+    routes:[
+      {
+        path: '/',
+        redirect: '/home'
+      },
+    ]
+  },
   pack: {
     importFn: path => import(`../packages/${path}`),
     modules: ['home']
